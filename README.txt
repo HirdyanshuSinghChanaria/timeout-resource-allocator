@@ -31,3 +31,11 @@ Description
 - If timeout is reached, the request is denied.
 - Written in modular C code using header and source files.
 - Makefile is used for compiling the project.
+
+
+Future Work
+-----------
+* Build a GUI visualizing resource allocation in real time.
+* Implement priority-based allocation.
+* Add deadlock detection and recovery.
+* Add config files to set number of processes, timeouts, resources, etc.

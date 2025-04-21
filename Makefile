@@ -1,13 +1,10 @@
 CC = gcc
-CFLAGS = -Iinclude -lpthread  # Add -Iinclude to specify where to find header files
+CFLAGS = -Iinclude
+SRC = src/main.c src/process.c src/resource.c src/timeout.c
+OUT = resource_allocator
 
-SRC = src/main.c src/process.c src/resource.c
-OUT = allocator  # Output executable name
-
-# Build rule
 all:
-	$(CC) $(SRC) -o $(OUT) $(CFLAGS)
+	$(CC) $(CFLAGS) $(SRC) -o $(OUT)
 
-# Clean up compiled files
 clean:
 	rm -f $(OUT)
